@@ -15,8 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env:
-      http_proxy: ""
-      https_proxy: ""
+      NO_PROXY: "registry.npmjs.org"
     steps:
       - uses: actions/checkout@v3
         with:
