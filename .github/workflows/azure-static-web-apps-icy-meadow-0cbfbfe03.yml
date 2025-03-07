@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env:
-      http_proxy: ""
-      https_proxy: ""
+      http_proxy: http://proxy-dmz.intel.com:912
+      https_proxy: http://proxy-dmz.intel.com:912
     steps:
       - uses: actions/checkout@v3
         with:
